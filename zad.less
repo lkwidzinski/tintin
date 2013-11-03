@@ -1,0 +1,130 @@
+@backgroundcolor: white;
+@headers_color:#A64B00;
+@menu_height:28px;
+@padding:5px;
+@border_size:1px;
+@font:"Arial";
+@font_size:1em;
+@font_color:#9B2766;
+.button_padding{	padding-left:10px; 
+					padding-right:10px;}
+.no_padding_margin{	margin:0px;
+					padding:0px;}
+
+#wrapper{ 	border: @border_size solid black;  
+			margin: 30px;	
+			background-color: @backgroundcolor;
+		}
+#badge{	position: absolute;
+		left:10px;
+		top:10px;}
+#logo{		margin-left: 50px;}
+
+#banner {	background-image:url('images/banner.png');	
+			background-position: right;
+			background-repeat:no-repeat;
+		}
+#banner a{	text-decoration: none;}
+
+#banner ul{				position:relative;
+						list-style-type: none;
+						.no_padding_margin;
+						right:6%;
+						bottom:25px;
+						}
+
+#banner li{		display:block;
+				float:right;
+				.button_padding;
+				}
+
+.seperator{		border-left:@border_size solid black;}
+
+#mainNav {	bottom:0;
+			height:@menu_height;
+			width:100%;
+			background-image:url('images/bg_nav.png');
+			background-repeat:repeat-x;}
+
+#mainNav ul{	list-style-type: none;
+				.no_padding_margin;}
+
+#mainNav a{		display:block;	
+				height:@menu_height;
+				border-right:@border_size solid black;
+				.button_padding;
+				height:@menu_height;
+				text-align: center;
+				text-decoration: none;
+				color: white;}
+
+#mainNav a:hover{	background-image:url('images/bg_nav_h.png');
+					background-repeat:repeat-x;
+					height:@menu_height;}
+
+#mainNav li{	float:left;}
+
+#contentWrapper{	position: relative;	
+					width:100%;
+					padding-top: 10px;
+					padding-bottom: 10px;
+
+					}
+#contentWrapper #main{	margin-left: 25%;
+						margin-right: 15%;
+						width:60%;
+						top:0;
+						font-family:@font;
+						font-size: @font_size;
+						color:@font_color;
+						}
+
+#contentWrapper #main img {	float:right;}
+
+#contentWrapper #main h1{	color:darken(@headers_color,50%);}
+
+#contentWrapper #main h2{	color:@headers_color;
+							text-decoration:underline;}
+
+#contentWrapper #sidebar{	background-color: darken(@backgroundcolor, 10%);
+							position:absolute;
+							border-right:@border_size solid black;
+							left:0;
+							top:0;
+							float:left;
+							width:20%;
+							height:100%;}
+
+#contentWrapper #sidebar p {	padding: @padding;
+								color:darken(@backgroundcolor, 55%);}	
+
+#contentWrapper #sidebar h2{	background-image:url('images/bg_side_head.png');
+								background-repeat:repeat-x;
+								border-top:@border_size solid black;
+								border-bottom:@border_size solid black; 
+								color:@headers_color;}
+
+#contentWrapper #sidebar a{	color:@headers_color;}								
+
+#contentWrapper #sidebar a:hover{	color:violet;}	
+
+#contentWrapper #adverts{	background-color: darken(@backgroundcolor, 5%);
+							position:absolute;
+							float:right;
+							top:0;
+							right:0;
+							width:10%;
+							border-left:@border_size solid black;
+							height:100%;
+							}
+
+#contentWrapper #adverts p{	padding:5px;}
+
+h2,h3,h4{	padding-left:10px;}	
+
+p.copyright{	position: absolute;
+				bottom:0;
+				display:block;
+				width:100%;
+
+				background-color: darken(@backgroundcolor, 75%); }						
